@@ -1,0 +1,113 @@
+body,section,div{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+@font-face {
+    font-family: 'Rock Salt';
+    src: url('../font/RockSalt-Regular.ttf');
+}
+
+[conteudo]{
+    display: grid;
+    background-color: rgb(65, 58, 59); 
+    grid-template-columns: 45% 55%; 
+    align-items: center;
+}
+
+.btnSobre, .btnContato {
+    border-radius: 25px 4px 25px 2px;
+    padding: 5px;
+    font-size: 1.5em;
+    margin: 20px 15px 0 0;
+    float: right;
+    background-color: rgb(110,93,239);
+}
+.btnSobre{
+    margin: 40px 20px 0 0;
+}
+
+
+a{  margin-top: 40px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.areaText{
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    color: rgb(184, 184, 184);
+    height: 540px;
+    text-align: center;
+    margin: auto;
+    max-width: 700px;
+}
+
+.cont_main{
+    display: grid;
+    grid-template-rows: 80px 1fr;
+    box-sizing: content-box;
+
+}
+
+.cont_name{
+    font-size: 4em;
+    height: 100%;
+}
+
+ .name{
+    font-family: 'Rock Salt';
+    line-height: 150%;
+    font-size: 1.6em;
+    margin: 200px 0 0 10px;
+    text-align: center;
+    color: rgb(110,93,239);
+}
+
+@media (max-width: 1050px){
+    [conteudo]{
+        display: grid;
+        grid-template-columns: 100%;
+        margin: 0;
+        box-sizing: border-box;
+   }
+
+   nav{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100%;
+        float: left;
+   }
+
+   nav> .btnSobre, .btnContato{
+        display: flex;
+        border-radius: 0;
+        font-size: 2em;
+        color: rgb(65, 58, 59); 
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+  
+   .areaText{
+        height: 100%;
+        padding: 20px 10px 0 10px;
+        font-size: 2em;
+    }
+
+    .cont_name{
+        margin: 0;
+        height: auto;
+    }
+    .name{
+        display: flex;
+        width: 100%;
+        font-size: 1em;
+        margin:auto;
+        padding: 20px;
+        box-sizing: border-box;
+        justify-content: center;
+  }
+}
+
